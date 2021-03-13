@@ -17,6 +17,6 @@ fn main() {
         io::stdin()
             .read_line(&mut gues)
             .expect("Error while reading the input");
-        game.guess(gues);
+        game.guess(gues.trim());
     }
 }
