@@ -10,7 +10,7 @@ fn main() {
     std::io::stdin()
     .read_line(&mut word)
     .expect("Error while reading the input");
-  
+    print!("\x1B[2J");
       let mut game = game::build_game(word);
       while game.playing() {
           let mut gues = String::new();
